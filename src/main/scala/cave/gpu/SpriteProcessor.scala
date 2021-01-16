@@ -70,7 +70,7 @@ class SpriteProcessor(numSprites: Int = 1024) extends Module {
   }
 
   // Decode sprite info
-  val spriteInfo = Sprite.decode(io.spriteRam.dout)
+  val spriteInfo = Sprite.decode(io.spriteRam.dout, true)
 
   // Wires
   val effectiveRead = Wire(Bool())

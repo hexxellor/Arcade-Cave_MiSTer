@@ -103,7 +103,7 @@ object Config {
 
   val PROG_ROM_OFFSET = 0x00000000
   val TILE_ROM_OFFSET = 0x00100000
-  val SOUND_ROM_OFFSET = 0x00f00000
+  val SOUND_ROM_OFFSET = 0x00d00000
   val FRAME_BUFFER_OFFSET = 0x2400000
   val DDR_DOWNLOAD_OFFSET = 0x30000000
 
@@ -148,9 +148,9 @@ object Config {
   val LAYER_2_RAM_GPU_ADDR_WIDTH = 12
   val LAYER_2_RAM_GPU_DATA_WIDTH = 32
 
-  val PALETTE_RAM_ADDR_WIDTH = 15
+  val PALETTE_RAM_ADDR_WIDTH = 11
   val PALETTE_RAM_DATA_WIDTH = 16
-  val PALETTE_RAM_GPU_ADDR_WIDTH = 15
+  val PALETTE_RAM_GPU_ADDR_WIDTH = 11
   val PALETTE_RAM_GPU_DATA_WIDTH = 16
 
   /** The number of bits per color channel */
@@ -158,7 +158,7 @@ object Config {
   /** The number of palettes */
   val NUM_PALETTES = 128
   /** The number of colors per palette */
-  val NUM_COLORS = 256
+  val NUM_COLORS = 16
   /** The width of a palette entry palette index */
   val PALETTE_ENTRY_PALETTE_WIDTH = log2Ceil(NUM_PALETTES)
   /** The width of a palette entry color index */
